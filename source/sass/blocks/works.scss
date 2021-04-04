@@ -1,0 +1,48 @@
+.works {
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+.works__title {
+  margin-bottom: 38px;
+}
+.works__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.works__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.works__bg {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  &--nutrient {
+    background-image: url(../img/icon_leaf.svg);
+  }
+  &--cooking {
+    background-image: url(../img/icon_tub.svg);
+  }
+  &--use {
+    background-image: url(../img/icon_eat.svg);
+  }
+  &--changes {
+    background-image: url(../img/icon_alarm.svg);
+  }
+}
+.work__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: $special-dark-gray;
+  margin: 0 0 0 20px;
+}

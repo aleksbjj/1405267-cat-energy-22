@@ -1,0 +1,36 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+  background-image: url(../img/index-background-mobile.jpg);
+  background-repeat: no-repeat;
+  padding-top: 25px;
+  img {
+    order: 0;
+  }
+}
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+
+  &--button {
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+.promo__title {
+  color: $basic-white;
+  text-align: center;
+}
+.promo__discription {
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-white;
+  text-align: center;
+  text-transform: uppercase;
+}

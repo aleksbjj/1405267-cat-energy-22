@@ -1,0 +1,70 @@
+.page {
+  height: 100%;
+}
+.page,
+.page::before,
+.page::after {
+  box-sizing: border-box;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basic-black;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $basic-white;
+  width: 280px;
+  background-color: $basic-green;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  min-height: 40px;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: transparentize($basic-white, 0.3);
+  }
+}

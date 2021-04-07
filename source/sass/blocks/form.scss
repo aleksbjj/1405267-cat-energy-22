@@ -1,0 +1,124 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form__inner {
+  display: flex;
+  flex-direction: column;
+}
+.form__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: none;
+  margin: 0 0 25px;
+  padding: 0;
+
+  &--program {
+    border-top: 1px solid $basic-gray-dark;
+    border-bottom: 1px solid $basic-gray-dark;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  &--contact {
+    margin-bottom: 30px;
+  }
+
+  &--additional {
+    margin-bottom: 41px;
+  }
+}
+.form__name {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &--about:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  &--contact:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+.form__description {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 13px;
+  color: $special-dark-gray;
+  text-transform: uppercase;
+}
+.form__input {
+  flex-grow: 1;
+  height: 46px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-gray;
+  text-transform: uppercase;
+  padding-left: 15px;
+  border: 1px solid $basic-white-dark;
+
+  &--comment {
+    padding-top: 13px;
+    min-height: 150px;
+    margin: 0;
+  }
+}
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.form__item {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.form__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 26px;
+  padding-right: 20px;
+  margin-bottom: 33px;
+  background-color: $basic-white;
+
+  &--contact {
+    width: 200px;
+  }
+
+  &--additional {
+    margin-bottom: 39px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1000%;
+    height: 2px;
+    background-color: $basic-green;
+    top: 16px;
+    z-index: -1;
+  }
+}
+.form__img {
+  position: absolute;
+  right: 16px;
+}
+.form__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__text {
+  margin: 0;
+  margin-top: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

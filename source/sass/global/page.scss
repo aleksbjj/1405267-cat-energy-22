@@ -21,7 +21,6 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  
 }
 .visualy-hidden {
   position: absolute;
@@ -58,6 +57,7 @@
   min-height: 40px;
   text-transform: uppercase;
   outline: none;
+  border: none;
 
   &:hover,
   &:focus {

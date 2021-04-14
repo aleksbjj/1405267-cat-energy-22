@@ -1,3 +1,11 @@
 .page-footer {
   background-color: $basic-gray;
 }
+.page-footer__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+}

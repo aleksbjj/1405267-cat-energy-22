@@ -5,6 +5,11 @@
   border-top: 1px solid $basic-gray-dark;
   border-bottom: 1px solid $basic-gray-dark;
   height: 63px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    border: none;
+  }
 }
 .social__list {
   list-style: none;

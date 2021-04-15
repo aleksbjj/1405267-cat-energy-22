@@ -7,6 +7,10 @@
 html {
   height: 100%;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 body {
   min-width: 320px;
@@ -20,8 +24,19 @@ body {
   color: $basic-black;
 }
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1300px;
+    padding: 0 40px;
+  }
 }
 .visualy-hidden {
   position: absolute;
@@ -43,6 +58,11 @@ body {
   font-weight: normal;
   font-style: normal;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 .button {
   display: flex;
@@ -59,6 +79,11 @@ body {
   text-transform: uppercase;
   outline: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &:hover,
   &:focus {

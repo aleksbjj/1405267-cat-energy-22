@@ -1,6 +1,17 @@
 .program-select {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    margin-bottom: 82px;
+  }
 }
+
 .program-select__text {
   width: 226px;
   margin: 0;
@@ -8,7 +19,23 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-top: 54px;
+  }
 }
 .program-select__form {
   margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+    margin-bottom: 82px;
+  }
 }

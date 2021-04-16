@@ -38,6 +38,7 @@
   }
 }
 .form__block {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -252,7 +253,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 2000%;
+    width: 100vw;
     height: 2px;
     background-color: $basic-green;
     top: 16px;

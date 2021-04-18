@@ -8,6 +8,12 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-gray-2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .properties__list {
   list-style: none;
@@ -19,10 +25,21 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  &:not(:last-child) {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 8px;
+    }
+  }
 }
 .properties__text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16pxs;
+  }
 }

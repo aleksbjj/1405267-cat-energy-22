@@ -7,6 +7,22 @@
   background-size: cover;
   background-position: center;
   margin: 39px 0 35px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    background-image: url(../img/gift-photo-tablet.jpg);
+    width: 100%;
+    min-height: 200px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
+    width: 245px;
+    height: 289px;
+    padding: 0 0 42px;
+    background-image: url(../img/gift-photo-desktop.jpg);
+  }
 }
 .gift__description {
   position: relative;
@@ -18,6 +34,16 @@
   color: $basic-white;
   margin: 140px 0 0 0;
 
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0 0;
+    text-align: center;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -27,5 +53,15 @@
     bottom: 105px;
     background-image: url(../img/icon_gift.svg);
     margin-left: -35px;
+
+    @media (min-width: $tablet-width) {
+      left: -305px;
+      top: -7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      top: -130px;
+    }
   }
 }

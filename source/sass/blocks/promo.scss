@@ -14,6 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     display: grid;
     grid-template-columns: 570px 570px;
     grid-template-rows: min-content min-content min-content;
@@ -22,6 +23,7 @@
 }
 .promo__img {
   order: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -74,7 +76,7 @@
     &--button {
       grid-column: 1/2;
       margin: 0;
-      padding-left:83px;
+      padding-left: 83px;
     }
   }
 }

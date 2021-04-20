@@ -3,3 +3,20 @@
     margin-top: 22px;
   }
 }
+
+.page-main--index {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: url(../img/index-background-desktop.jpg) right top;
+      background-repeat: no-repeat;
+      top: -120px;
+      z-index: -1;
+    }
+  }
+}

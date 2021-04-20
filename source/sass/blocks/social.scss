@@ -27,13 +27,15 @@
   &:hover,
   &:focus {
     path {
-      fill: $basic-green;
+      fill: none;
+      stroke: $basic-green;
     }
   }
 
   &:active {
     path {
-      fill: transparentize($basic-green, 0.3);
+      fill: none;
+      stroke: transparentize($basic-green, 0.3);
     }
   }
 }

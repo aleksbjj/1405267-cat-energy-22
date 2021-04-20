@@ -245,6 +245,10 @@
       height: 12px;
       background-image: url(../img/icon-long-arrow.svg);
     }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

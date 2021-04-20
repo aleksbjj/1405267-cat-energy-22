@@ -20,3 +20,20 @@
   margin: 0;
   padding: 0;
 }
+
+.social__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: transparentize($basic-green, 0.3);
+    }
+  }
+}

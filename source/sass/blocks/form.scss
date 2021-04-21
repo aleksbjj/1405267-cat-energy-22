@@ -127,6 +127,7 @@
   display: block;
   font-size: 16px;
   line-height: 18px;
+  margin-right: 10px;
   color: $special-dark-gray;
   text-transform: uppercase;
 
@@ -185,6 +186,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 52px;
     font-size: 20px;
     line-height: 29px;
   }
@@ -361,6 +363,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $base-gray-light-adv;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 
   &--radio {
     content: "";

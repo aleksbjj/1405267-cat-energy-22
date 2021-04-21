@@ -16,33 +16,33 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/header_mobile.svg" alt="Лого Кэт Энереджи">
+            <img src="img/logo-mobile.svg" alt="Лого Кэт Энереджи">
           </picture>
         </a>
-        <button class="main-nav__toggle">
+        <button class="main-nav__toggle main-nav__toggle--active js-button">
           <span class="visualy-hidden"> Открыть меню</span>
         </button>
       </div>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--active js-menu">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">
+          <a class="main-nav__link  main-nav__link--index main-nav__link--index-active">
             Главная
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="catalog.html" class="main-nav__link">
+          <a href="catalog.html" class="main-nav__link  main-nav__link--index">
             Каталог продукции
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">
-            Подбор продукции
+          <a href="form.html" class="main-nav__link  main-nav__link--index">
+            Подбор программы
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-main page-main--index">
     <section class="promo container">
       <div class="promo__wrapper">
         <h2 class="visualy-hidden"> Кэт энерджи про</h2>
@@ -72,8 +72,8 @@
         <li class="programms__item">
           <h3 class="title programms__title programms__title--weight">Набор массы </h3>
           <p class="programms__description programms__description--weight">
-            Заработать авторитет среди дворовых котов&nbsp;<br> и даже собак? Серия Cat Energy Pro поможет вашему коту
-            нарастить необходимые&nbsp;<br> мышцы!</p>
+            Заработать авторитет среди дворовых котов</br> и даже собак? Серия Cat Energy Pro поможет вашему коту
+            нарастить необходимые</br> мышцы!</p>
           <a href="#" class="programms__link">Каталог Pro</a>
         </li>
       </ul>
@@ -106,7 +106,8 @@
         <li class="works__item">
           <div class="works__bg works__bg--changes"></div>
           <p class="work__description">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему</br> вашего
+            питомца!
           </p>
         </li>
       </ul>
@@ -117,7 +118,7 @@
           <h2 class="title example__title">Живой пример</h2>
           <p class="text example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            изнуряющих тренировок! При этом он не менял своих привычек и</br> по-прежнему спит по 16 часов в день.
           </p>
           <ul class="example__list">
             <li class="example__item">
@@ -143,10 +144,21 @@
               <img src="img/after-mobile.png" width="251" height="240" alt="Фото худого кота после употребления диеты">
             </li>
           </ul>
+          <div class="slider__control slider__control--check">
+            <div class="slider__text slider__text--before">было</div>
+            <input class="slider__check" type="checkbox" id="slider__control">
+            <label class="slider__label slider__label--check" for="slider__control">
+              <span class="visualy-hidden">Переключение слайда</span>
+            </label>
+            <div class="slider__text slider__text--after">стало</div>
+          </div>
           <div class="slider__control slider__control--range">
-            <span class="visually-hidden">Переключение слайда</span>
-            <span class="slider__text">было</span>
-            <span class="slider__text">стало</span>
+            <div class="slider__text slider__text--before">было</div>
+            <input class="slider__range" type="range" id="slider__control">
+            <label class="slider__label slider__label--range" for="slider__control">
+              <span class="visualy-hidden">Переключение слайда</span>
+            </label>
+            <div class="slider__text slider__text--after">стало</div>
           </div>
         </div>
       </div>
@@ -173,8 +185,7 @@
       <div class="location__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461607064!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1614535727824!5m2!1sru!2sru"
-          width="350" height="362" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-          allowfullscreen></iframe>
+          title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" allowfullscreen></iframe>
       </div>
     </section>
     <div class="page-footer__inner container">
@@ -227,7 +238,7 @@
       </section>
     </div>
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -261,13 +261,21 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
-  }
-
-  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 42px;
     left: -42px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+      top: 16px;
+      z-index: -1;
+      transform: translateX(-100%);
+    }
   }
 
   &--contact {
@@ -282,7 +290,7 @@
     margin-bottom: 39px;
   }
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     width: 100vw;
@@ -290,10 +298,6 @@
     background-color: $basic-green;
     top: 16px;
     z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      transform: translateX(-50%);
-    }
   }
 }
 .form__img {

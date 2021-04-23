@@ -16,14 +16,14 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/header_mobile.svg" alt="Лого Кэт Энереджи">
+            <img src="img/logo-mobile.svg" alt="Лого Кэт Энереджи">
           </picture>
         </a>
-        <button class="main-nav__toggle">
-          <span class="visualy-hidden">Открыть меню</span>
+        <button class="main-nav__toggle main-nav__toggle--active js-button">
+          <span class="visualy-hidden"> Открыть меню</span>
         </button>
       </div>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--active js-menu">
         <li class="main-nav__item">
           <a href="index.html" class="main-nav__link">
             Главная
@@ -35,8 +35,8 @@
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link main-nav__link--active ">
-            Подбор продукции
+          <a href="form.html" class="main-nav__link main-nav__link--active">
+            Подбор программы
           </a>
         </li>
       </ul>
@@ -71,19 +71,22 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__name form__name--radio">
-                  <input type="radio" class="form__radio" name="radio" value="slim">
+                  <input type="radio" class="form__radio" name="radio" value="slim" checked>
+                  <span class="form__box form__box--radio"></span>
                   <span class="form__description form__description--radio"> Похудение</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__name form__name--radio">
                   <input type="radio" class="form__radio" name="radio" value="mass">
+                  <span class="form__box form__box--radio"></span>
                   <span class="form__description form__description--radio"> Набор массы</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__name form__name--radio">
                   <input type="radio" class="form__radio" name="radio" value="advice">
+                  <span class="form__box form__box--radio"></span>
                   <span class="form__description form__description--radio"> Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
@@ -140,25 +143,29 @@
           <ul class="form__list form__list--additional">
             <li class="form__item form__item--additional">
               <label class="form__name form__name--additional">
-                <input type="checkbox" class="form__check" name="additional" value="sweetener" checked>
+                <input type="checkbox" class="form__check" name="additional" value="sweetener" checked disabled>
+                <span class="form__box form__box--check"></span>
                 <span class="form__description form__description--check"> Cахарозаменитель</span>
               </label>
             </li>
             <li class="form__item form__item--additional">
               <label class="form__name form__name--additional">
                 <input type="checkbox" class="form__check" name="additional" value="water">
+                <span class="form__box form__box--check"></span>
                 <span class="form__description form__description--check"> Питьевая вода</span>
               </label>
             </li>
             <li class="form__item form__item--additional">
               <label class="form__name form__name--additional">
                 <input type="checkbox" class="form__check" name="additional" value="milk">
+                <span class="form__box form__box--check"></span>
                 <span class="form__description form__description--check"> Молоко</span>
               </label>
             </li>
             <li class="form__item form__item--additional">
               <label class="form__name form__name--additional">
                 <input type="checkbox" class="form__check" name="additional" value="vitamins">
+                <span class="form__box form__box--check"></span>
                 <span class="form__description form__description--check"> Витамины</span>
               </label>
             </li>
@@ -245,6 +252,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

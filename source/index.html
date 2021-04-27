@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="source/img/icon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -16,7 +20,7 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Лого Кэт Энереджи">
+            <img src="img/logo-mobile.svg" width="190" height="38" alt="Лого Кэт Энереджи">
           </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--active js-button">
@@ -53,9 +57,9 @@
         <a href="form.html" class="button promo__button">Подобрать программу</a>
       </div>
       <picture class="promo__img">
-        <source media="(min-width: 1440px)" srcset="img/index-can.png">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-        <img src="img/index-can-mobile1.png" alt="Cat Energy">
+        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png, img/index-can-tablet@2x.png 2x">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy">
       </picture>
     </section>
     <section class="programms container">
@@ -138,10 +142,18 @@
         <div class="slider example__slider">
           <ul class="slider__list">
             <li class="slider__item slider__item--active">
-              <img src="img/before-mobile.png" width="311" height="232" alt="Фото толстого кота до употребления диеты">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  alt="Фото толстого кота до употребления диеты">
+              </picture>
             </li>
             <li class="slider__item">
-              <img src="img/after-mobile.png" width="251" height="240" alt="Фото худого кота после употребления диеты">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                  alt="Фото худого кота после употребления диеты">
+              </picture>
             </li>
           </ul>
           <div class="slider__control slider__control--check">

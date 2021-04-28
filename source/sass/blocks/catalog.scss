@@ -23,6 +23,7 @@
     grid-template-rows: min-content;
     column-gap: 60px;
     row-gap: 140px;
+    margin-top: 164px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +76,12 @@
 .catalog__inner-img {
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -73px;
+    margin: 0 0 -73px;
+  }
 }
 .catalog__link {
   display: flex;

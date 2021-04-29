@@ -22,16 +22,20 @@
   }
 }
 
+.copyright__icon {
+  fill: $special-light-dark-gray;
+}
+
 .copyright__img {
   &:hover,
   &:focus {
-    path {
+    .copyright__icon {
       fill: $basic-green;
     }
   }
 
   &:active {
-    path {
+    .copyright__icon {
       fill: transparentize($basic-green, 0.3);
     }
   }

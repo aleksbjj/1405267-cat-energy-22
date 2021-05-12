@@ -1,7 +1,10 @@
 .page-main {
   &--form {
-    margin-top: 22px;
     overflow-x: hidden;
+    @media (min-width: $tablet-width) {
+      margin-top: -4px;
+      overflow-x: hidden;
+    }
   }
 
   &--catalog {

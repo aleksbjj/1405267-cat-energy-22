@@ -97,7 +97,7 @@
               <input type="text" name="name" class="form__input form__input--about" placeholder="барсик">
             </label>
             <label class="form__name form__name--about">
-              <span class="form__description form__description--about">Вес (кг)*:</span>
+              <span class="form__description form__description--about">Вес (кг):*</span>
               <input type="number" name="weight" class="form__input form__input--about" placeholder="7">
             </label>
             <label class="form__name form__name--about">
@@ -144,9 +144,9 @@
               </svg>
             </label>
             <label class="form__name form__name--contact">
-              <span class="form__description form__description--contact">Телефон:*</span>
+              <span class="form__description form__description--contact form__description--contact-phone">Телефон:*</span>
               <input type="tel" name="tel" class=" form__input form__input--contact" placeholder="8 (960) 900-60-90">
-              <svg width="20" height="20" class="form__img">
+              <svg width="20" height="20" class="form__img form__img--phone">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </label>
@@ -156,7 +156,7 @@
           <legend class="title form__title form__title--comment">Комментарий</legend>
           <label for="comment" class="visualy-hidden">Напишите комментарий</label>
           <textarea name="comment" id="comment" cols="30" rows="10" class="form__input form__input--comment"
-            placeholder="раскажите о павадках вашего кота"></textarea>
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__block form__block--additional">
           <legend class="title form__title form__title--additional">Дополнительно</legend>
@@ -198,7 +198,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="location location--form">
+    <section class="location">
       <h2 class="visualy-hidden"> Как нас найти</h2>
       <div class="location__inner container">
         <p class="location__text location__text--invite">
@@ -215,11 +215,10 @@
           </p>
         </div>
       </div>
-      <div class="location__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461607064!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1614535727824!5m2!1sru!2sru"
-          width="350" height="362" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-          allowfullscreen></iframe>
+      <div class="location__box">
+        <div class="location__map location__map--img">
+        </div>
+        <div class="location__map" id="map"></div>
       </div>
     </section>
     <div class="page-footer__inner container">
@@ -264,7 +263,10 @@
       </section>
     </div>
   </footer>
-  <script src="js/menu.min.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArsgwAsxi_YzPJHgYrOnpXURx6UWdOM_8&callback=initMap">
+    </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

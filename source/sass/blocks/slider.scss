@@ -6,6 +6,8 @@
   list-style: none;
   padding: 0;
   display: grid;
+  text-align: center;
+  min-height: 245px;
 }
 .slider__item {
   grid-row: 1 / -1;
@@ -14,7 +16,6 @@
 
   &--active {
     display: block;
-    margin: 0 auto;
   }
 }
 

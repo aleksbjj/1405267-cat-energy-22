@@ -64,4 +64,3 @@ function initMap() {
     console.log('2');
   }
 }
-

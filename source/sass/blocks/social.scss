@@ -12,6 +12,7 @@
     margin-left: 32px;
   }
 }
+
 .social__list {
   list-style: none;
   display: flex;
@@ -21,10 +22,15 @@
   margin: 0 10px 0 2px;
   padding: 0;
 }
+
 .social__item {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 39px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;
@@ -38,7 +44,10 @@
 .social__img {
   fill: $special-light-dark-gray;
 }
+
 .social__link {
+  outline: none;
+
   &:hover,
   &:focus {
     .social__img {

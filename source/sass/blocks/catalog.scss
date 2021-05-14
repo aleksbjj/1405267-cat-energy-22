@@ -2,16 +2,22 @@
   margin-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 63px;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 74px;
   }
 }
+
 .catalog__title {
-  padding-bottom: 40px;
+  padding: 0 20px 40px 20px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -29,15 +35,16 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
-    row-gap: 144px;
+    row-gap: 146px;
   }
 }
+
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
   min-height: 209px;
   justify-content: center;
-  padding-bottom: 24px;
+  padding: 0 20px 24px 20px;
   border-top: 1px solid $basic-gray-light;
 
   @media (min-width: $tablet-width) {
@@ -57,6 +64,7 @@
     }
   }
 }
+
 .catalog__inner {
   display: flex;
   flex-direction: column;
@@ -65,14 +73,20 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     align-items: center;
-    padding: 0 36px;
+    padding: 0 18px;
   }
 }
+
 .catalog__inner-description {
   @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 34px;
   }
 }
+
 .catalog__inner-img {
   align-items: center;
   justify-content: center;
@@ -80,14 +94,41 @@
   @media (min-width: $tablet-width) {
     position: relative;
     top: -73px;
-    margin: 0 0 -73px;
+    margin: 0 0 -80px;
+    height: 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -87px;
+    margin: 0 0 -86px;
   }
 }
+
 .catalog__link {
   display: flex;
   height: 144px;
-  align-items: center;
+  align-items: start;
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    height: 208px;
+    align-items: flex-end;
+  }
 }
+
+.catalog__item:nth-of-type(3) .catalog__link {
+  padding-top: 46px;
+}
+
+.catalog__item:nth-of-type(5) .catalog__link {
+  padding-top: 48px;
+}
+
+.catalog__item:nth-of-type(7) .catalog__link {
+  padding-top: 44px;
+}
+
 .catalog__button {
   width: 100%;
   font-size: 16px;

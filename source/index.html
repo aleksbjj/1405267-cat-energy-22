@@ -102,7 +102,8 @@
           <h3 class="title programms__title programms__title--weight">Набор массы </h3>
           <p class="programms__description programms__description--weight">
             Заработать авторитет среди дворовых котов</br> и даже собак? Серия Cat Energy Pro поможет вашему коту
-            нарастить необходимые</br> мышцы!</p>
+            нарастить необходимые</br>
+            мышцы!</p>
           <a href="#" class="programms__link">Каталог Pro</a>
         </li>
       </ul>
@@ -173,7 +174,7 @@
                 <source type="img/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                 <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                  alt="Фото толстого кота до употребления диеты">
+                  alt="Фото толстого кота до употребления диеты" class="slider__img">
               </picture>
             </li>
             <li class="slider__item">
@@ -183,7 +184,7 @@
                 <source type="img/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                 <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
-                  alt="Фото худого кота после употребления диеты">
+                  alt="Фото худого кота после употребления диеты" class="slider__img">
               </picture>
             </li>
           </ul>
@@ -197,8 +198,8 @@
           </div>
           <div class="slider__control slider__control--range">
             <div class="slider__text slider__text--before">было</div>
-            <input class="slider__range" type="range" id="slider__control">
-            <label class="slider__label slider__label--range" for="slider__control">
+            <input class="slider__range" type="range" id="slider__range">
+            <label class="slider__label slider__label--range" for="slider__range">
               <span class="visualy-hidden">Переключение слайда</span>
             </label>
             <div class="slider__text slider__text--after">стало</div>
@@ -227,6 +228,18 @@
       </div>
       <div class="location__box">
         <div class="location__map location__map--img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img src="img/bg-map-mobile@1x.png" class="location__img"
+              alt="Карта как нас найти по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
+              srcset="img/bg-map-mobile@2x.png 2x">
+          </picture>
         </div>
         <div class="location__map" id="map"></div>
       </div>
@@ -264,6 +277,7 @@
         </ul>
       </section>
       <section class="copyright">
+        <h2 class="visualy-hidden"> Копирайты</h2>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text"> HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__img">
           <svg class="copyright__icon" width="27" height="34">

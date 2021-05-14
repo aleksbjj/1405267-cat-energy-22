@@ -1,6 +1,7 @@
 .properties__subtitle {
   margin: 0;
-  margin-top: 23px;
+  margin-top: 21px;
+  width: 100px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -13,14 +14,22 @@
     margin-top: 33px;
     font-size: 20px;
     line-height: 24px;
+    width: 159px;
+    text-align: center;
   }
 }
+
 .properties__list {
   list-style: none;
   margin: 14px 0 0 0;
   padding: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+  }
 }
+
 .properties__item {
   display: flex;
   justify-content: space-between;
@@ -37,13 +46,13 @@
 }
 
 .properties__text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 16pxs;
+    line-height: 16px;
   }
 }

@@ -11,4 +11,8 @@
     align-items: center;
     padding-top: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 37px;
+  }
 }

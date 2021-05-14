@@ -110,21 +110,21 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__name form__name--radio">
-                  <input type="radio" class="form__radio" name="radio" value="slim" checked>
+                  <input type="radio" class="form__radio" name="program" value="slim" checked>
                   <span class="form__box form__box--radio"></span>
                   <span class="form__description form__description--radio"> Похудение</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__name form__name--radio">
-                  <input type="radio" class="form__radio" name="radio" value="mass">
+                  <input type="radio" class="form__radio" name="program" value="weight">
                   <span class="form__box form__box--radio"></span>
                   <span class="form__description form__description--radio"> Набор массы</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__name form__name--radio">
-                  <input type="radio" class="form__radio" name="radio" value="advice">
+                  <input type="radio" class="form__radio" name="program" value="advice">
                   <span class="form__box form__box--radio"></span>
                   <span class="form__description form__description--radio"> Не знаю (нужен ваш совет)</span>
                 </label>
@@ -186,7 +186,7 @@
               <label class="form__name form__name--additional">
                 <input type="checkbox" class="form__check" name="additional" value="vitamins">
                 <span class="form__box form__box--check"></span>
-                <span class="form__description form__description--check"> Витамины</span>
+                <span class="form__description form__description--check form__description--check-vitamins"> Витамины</span>
               </label>
             </li>
         </fieldset>
@@ -217,6 +217,18 @@
       </div>
       <div class="location__box">
         <div class="location__map location__map--img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img src="img/bg-map-mobile@1x.png" class="location__img"
+              alt="Карта как нас найти по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
+              srcset="img/bg-map-mobile@2x.png 2x">
+          </picture>
         </div>
         <div class="location__map" id="map"></div>
       </div>
@@ -254,6 +266,7 @@
         </ul>
       </section>
       <section class="copyright">
+        <h2 class="visualy-hidden"> Копирайты</h2>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text"> HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__img">
           <svg class="copyright__icon" width="27" height="34">

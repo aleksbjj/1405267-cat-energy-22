@@ -14,6 +14,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 
+
 // Styles
 
 const styles = () => {
@@ -104,6 +105,7 @@ const copy = (done) => {
     "source/*.html",
     "source/img/**/*.svg",
     "!source/img/icon/*.svg",
+    "source/*.json"
   ], {
     base: "source"
   })
@@ -158,7 +160,7 @@ const build = gulp.series(
     html,
     scripts,
     sprite,
-    optWebp
+    optWebp,
   ),
 );
 
@@ -175,7 +177,7 @@ exports.default = gulp.series(
     html,
     scripts,
     sprite,
-    optWebp
+    optWebp,
   ),
   gulp.series(
     server,

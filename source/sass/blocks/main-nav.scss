@@ -42,7 +42,7 @@
   }
 
   &--no-js {
-    display: none;
+    display: block;
   }
 
   @media (min-width: $tablet-width) {

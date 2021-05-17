@@ -9,8 +9,25 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 80px;
-    background: linear-gradient(to bottom, $basic-white 29.5%, $basic-white-dark 28.5%, $basic-white-dark 100%);
-    margin-bottom: -58px;
+    background: linear-gradient(to bottom, $basic-white 27.6%, $basic-white-dark 27.6%, $basic-white-dark 100%);
+    margin-bottom: -104px;
+  }
+}
+
+.example__slider {
+  margin-top: 17px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+    padding-bottom: 69px;
+    margin-left: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -104px;
+    left: 40px;
   }
 }
 

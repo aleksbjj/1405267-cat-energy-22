@@ -6,14 +6,14 @@ function initMap() {
     disableDefaultUI: true
   };
   if (window.matchMedia("(min-width: 768px)").matches) {
-    let map = new google.maps.Map(document.getElementById('map'), opt);
+    let map = new google.maps.Map(document.getElementById("map"), opt);
     let marker = new google.maps.Marker({
       position: pos,
       map: map,
       icon: "../img/map-pin.png.png"
     });
   } else {
-    let map = new google.maps.Map(document.getElementById('map'), opt);
+    let map = new google.maps.Map(document.getElementById("map"), opt);
     let marker = new google.maps.Marker({
       position: pos,
       map: map,

@@ -1,28 +1,8 @@
-.example__slider {
-  margin-top: 27px;
-  padding-bottom: 36px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 33px;
-    padding-bottom: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    left: 29px;
-    top: -103px;
-    margin-bottom: -23px;
-    margin-top: 31px;
-    padding-bottom: 47px;
-  }
-}
-
 .slider__list {
   list-style: none;
   padding: 0;
   display: grid;
   text-align: center;
-  min-height: 245px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -40,11 +20,20 @@
 
   &--active {
     display: block;
+  }
 
-    @media (min-width: $desktop-width) {
-      min-width: 719px;
-      padding-left: 42px;
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    display: flex;
+
+    &--after {
+      z-index: 1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 719px;
+    padding-left: 42px;
   }
 }
 
@@ -53,7 +42,7 @@
   justify-content: center;
 
   &--check {
-    padding-top: 3px;
+    padding-top: 12px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -62,14 +51,16 @@
 
   &--range {
     display: flex;
+    justify-content: start;
     padding-top: 10px;
+    padding-left: 51px;
 
     @media (max-width: $mobile-width-only) {
       display: none;
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 86px;
+      padding-left: 121px;
     }
   }
 }
@@ -128,7 +119,38 @@
   border-radius: 6px;
   outline: none;
 
+  &::-moz-range-track {
+    appearance: none;
+    width: 428px;
+    height: 6px;
+    margin: 0 22px;
+    background: $basic-gray-middle;
+    border-radius: 6px;
+    outline: none;
+  }
+
   &::-webkit-slider-thumb {
+    appearance: none;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    border: 1px solid $base-gray-light-adv;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), inset 0 0 0 12px $basic-white;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), inset 0 0 0 12px $basic-white;
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 12px $basic-white;
+    }
+  }
+
+  &::-moz-range-thumb {
     appearance: none;
     position: relative;
     width: 34px;
@@ -170,5 +192,28 @@
     &:active {
       border: none;
     }
+  }
+}
+
+.slider__img {
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
+}
+
+.slider__img-box {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    &--after {
+      max-width: 50%;
+      background: linear-gradient(to bottom, $basic-white 32.7%, $basic-white-dark 32.7%);
+      overflow: hidden;
+      z-index: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, $basic-white 36%, $basic-white-dark 36%);
   }
 }

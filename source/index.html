@@ -7,11 +7,11 @@
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="/favicon32.ico">
-  <link rel="icon" href="/favicon16.ico">
-  <link rel="icon" href="/favicon32.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon32.ico">
+  <link rel="icon" href="../favicon16.ico">
+  <link rel="icon" href="../favicon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="source/img/icon/apple-icon-180x180.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="/manifest.json">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -43,7 +43,7 @@
             <img src="img/logo-mobile.svg" width="190" height="38" alt="Лого Кэт Энереджи">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--active js-button">
+        <button class="main-nav__toggle main-nav__toggle--active js-button main-nav__toggle--no-js">
           <span class="visualy-hidden"> Открыть меню</span>
         </button>
       </div>
@@ -96,7 +96,7 @@
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
             поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a href="#" class="programms__link">Каталог Slim </a>
+          <a href="slim.html" class="programms__link">Каталог Slim </a>
         </li>
         <li class="programms__item">
           <h3 class="title programms__title programms__title--weight">Набор массы </h3>
@@ -104,7 +104,7 @@
             Заработать авторитет среди дворовых котов</br> и даже собак? Серия Cat Energy Pro поможет вашему коту
             нарастить необходимые</br>
             мышцы!</p>
-          <a href="#" class="programms__link">Каталог Pro</a>
+          <a href="pro.html" class="programms__link">Каталог Pro</a>
         </li>
       </ul>
     </section>
@@ -113,13 +113,13 @@
       <ul class="works__list">
         <li class="works__item">
           <div class="works__bg works__bg--nutrient"></div>
-          <p class="work__description">
+          <p class="works__description">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
         <li class="works__item">
           <div class="works__bg works__bg--cooking"></div>
-          <p class="work__description">
+          <p class="works__description">
             Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.
@@ -127,7 +127,7 @@
         </li>
         <li class="works__item">
           <div class="works__bg works__bg--use"></div>
-          <p class="work__description">
+          <p class="works__description">
             Замените один-два приема
             обычной еды на наше
             функциональное питание.
@@ -135,7 +135,7 @@
         </li>
         <li class="works__item">
           <div class="works__bg works__bg--changes"></div>
-          <p class="work__description">
+          <p class="works__description">
             Уже через месяц наслаждайтесь изменениями к лучшему</br> вашего
             питомца!
           </p>
@@ -168,7 +168,7 @@
         <div class="slider example__slider">
           <ul class="slider__list">
             <li class="slider__item slider__item--active">
-              <picture>
+              <picture class="slider__img-box slider__img-box--after js-slider-after">
                 <source type="img/webp" media="(min-width: 768px)"
                   srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
                 <source type="img/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
@@ -178,7 +178,7 @@
               </picture>
             </li>
             <li class="slider__item">
-              <picture>
+              <picture class="slider__img-box">
                 <source type="img/webp" media="(min-width: 768px)"
                   srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
                 <source type="img/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
@@ -246,7 +246,7 @@
     </section>
     <div class="page-footer__inner container">
       <div class="logo logo--footer">
-        <a>
+        <a href="#">
           <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
         </a>
       </div>

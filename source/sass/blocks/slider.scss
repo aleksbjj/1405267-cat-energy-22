@@ -163,6 +163,7 @@
     &:hover,
     &:focus {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), inset 0 0 0 12px $basic-white;
+      background-color: $special-red;
     }
 
     &:active {
@@ -177,6 +178,7 @@
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

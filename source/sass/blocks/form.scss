@@ -281,6 +281,7 @@
     min-height: 150px;
     padding-top: 13px;
     margin: 0;
+    resize: none;
 
     @media (min-width: $tablet-width) {
       width: 632px;
